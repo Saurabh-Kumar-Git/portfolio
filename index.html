@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0c5f990907.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Saurabh</span> Kumar <br> from Kolkata.</h1>
+        </div>
+
+    </div>
+</div>
+<!-- ------about------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm Saurabh Kumar, a passionate and curious developer currently pursuing my B.Tech. I love building clean,
+                responsive, and user-friendly websites. With a solid foundation in HTML, CSS, JavaScript, and growing experience in
+                React and Node.js, I’m on a journey to become a full-stack developer.
+                I enjoy solving problems, learning new technologies, and collaborating on meaningful projects. Whether it's crafting a
+                personal portfolio or contributing to a team project, I bring creativity, dedication, and a strong desire to keep
+                improving.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX Design </span><br>Creating user-friendly and visually appealing designs with a strong understanding of layout, typography, and color
+                        theory using tools like Figma and Canva.
+</li>
+                        <li><span>Frontend Development </span><br>Building responsive and interactive user interfaces using HTML, CSS, JavaScript, and React.js. Focused on clean code and
+                        performance.</li>
+                        <li><span>Data Structures & Algorithms </span><br>Solving complex problems efficiently using DSA, with hands-on practice on platforms like LeetCode, enhancing logical
+                        thinking and coding skills.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 </span><br>💻 Personal Portfolio Website(Self project)</li>
+                        <li><span>2024 </span><br> participated in Internal Hackathon</li>
+                        <li><span>2022-Present</span><br> Self-Learning Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026 </span><br>Techno Main SaltLake(Koltata)</li>
+                        
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+<!-------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create clean, modern, and responsive website designs that focus on both aesthetics and user experience.
+                    From landing pages to full website layouts, I ensure each design is tailored to your brand and optimized for usability across all devices.
+                    My approach combines creativity with functionality to deliver designs that not only look good but also guide users effectively. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UX/UI Design</h2>
+                <p>I design intuitive and engaging user interfaces with a strong focus on user experience. By understanding user needs and
+                behavior, I create wireframes, prototypes, and high-fidelity designs that are both visually appealing and easy to use.
+                My goal is to craft seamless digital experiences that enhance user satisfaction and align with your business goals.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web Development</h2>
+                <p>I develop fast, scalable, and fully functional websites using the latest web technologies. From converting designs into
+                responsive code to integrating interactive features, I ensure smooth performance across all devices. My focus is on
+                writing clean, maintainable code while delivering seamless user experiences and solid backend logic when needed.
+</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- -------portfolio--------  -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Upskill Educational Website</h3>
+                    <p>The website connects you to the instructors.
+                        Access it by clicking here.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Infant Care Web App</h3>
+                    <p>The website assits parents in managing their child's healthcare.
+                        Access it by clicking here.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Netflix Clone webapp</h3>
+                    <p>Replicating Netflix functionality.Feature includes user to see movies name.
+                        Click here.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- ----------contact------ -->
+  <div id="contact">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>saurabhkumar869654@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 8696541180</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-kumar-7aa6271a0/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="image/resume.pdf" class="btn btn2">Download CV/Resume</a>
+        
+
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Saurabh Kumar </p>
+    </div>
+  </div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+  </script>
+  
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyD_wx4jXm1SreCVXE2DJHrLRLi7TuHENr9JzKUjXvlNEhCYPjG5o7MDBmquMxTYA6tgw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+               setTimeout(function(){
+                msg.innerHTML=""
+               },5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+
+            })
+</script>
+</body>
+</html>
